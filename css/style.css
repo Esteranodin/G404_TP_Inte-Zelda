@@ -4,12 +4,28 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
+#logo {
+  width: 10%;
+}
 
+nav{
+  position: absolute;
+  top: auto;
 
-/*
-@font-face {
+}
+nav ol li a {
+  text-decoration: none;
+  color: black;
+}
+.menu {
+  list-style: none;  
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
+  font-size: 24px;
+}
+/*
+@font-face {
+  
 }
 
 @font-face {
