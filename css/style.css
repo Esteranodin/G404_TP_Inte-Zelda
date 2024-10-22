@@ -4,25 +4,70 @@
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
+body{
+margin: 0%;
+}
+
+.logo {
+  width: 15%; 
+  margin-left: 20px;
+}
+
 #logo {
-  width: 10%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 30px;
+  margin-right: 10px;
+  margin-left: 40px;
+  font-family: 'Medula One', cursive;
+  src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
 }
 
 nav{
-  position: absolute;
-  top: auto;
-
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: #AF966D;
 }
-nav ol li a {
+
+nav ol {
+  display: flex;
+  gap: 20px;
+}
+
+nav ol a {
   text-decoration: none;
   color: black;
 }
+
 .menu {
   list-style: none;  
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
   font-size: 24px;
+  font-variant: small-caps;
+  align-items: center;
 }
+
+.imagefond{
+  width: 100%;
+ display: flex;
+}
+
+.slide2{
+  background-image: url("../img/zelda-bg_pattern_brown.png");
+  display: flex;
+}
+
+.slide2 h2{
+  color: aliceblue;
+  font-family: 'Medula One', cursive;
+  src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
+  font-size: 48px;
+}
+
 /*
 @font-face {
   
