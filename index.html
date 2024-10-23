@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,63 @@
     <title>Mon titre</title>
     <link rel="stylesheet" href="./css/style.css">
     <!-- Intégration Bootstrap -->
-     
-     <!-- Votre CSS -->
-     
+
+    <!-- Votre CSS -->
+
 </head>
+
 <body>
     <!-- Chaque entrée du menu doit mener à une section de la landing page -->
     <!-- MENU / NAVBAR -->
-    
-    <section>
+    <header>
         <nav>
-            <a href="" class="logo"><img id="logo" src="img/logo-xs-svg.png" alt="Logo Zelda Breath of the Wild" ></a>
-            <h1>Le jeu évènement</h1>   
+            <a href="" class="logo"><img id="logo" src="img/logo-xs-svg.png" alt="Logo Zelda Breath of the Wild"></a>
+            <h1>Le jeu évènement</h1>
             <ol class="menu">
-                    <li><a href=""></a></li>
-                    <li><a href="">entrer</a></li>
-                    <li><a href="">découvrir</a></li>
-                    <li><a href="">combattre</a></li>
-                    <li><a href="">s'équiper</a></li>
-                    <li><a href="">plus</a></li>
-                </ol>
-         </nav>
+                <li><a href=""></a></li>
+                <li><a href="">entrer</a></li>
+                <li><a href="">découvrir</a></li>
+                <li><a href="">combattre</a></li>
+                <li><a href="">s'équiper</a></li>
+                <li><a href="">plus</a></li>
+            </ol>
+        </nav>
+        <img class="imagefond" src="./img/zelda-botw.jpg" alt="Jaquette du jeux Zelda Breath of the Wild">
+    </header>
+
+    <section class="slide1">
+        <div class="world">
+            <h2>Entrez dans un monde d'aventure</h2>
+            <div class="hl-arrow"></div>
+            <p>Oubliez tout ce que vous savez sur les jeux The Legend of Zelda. Plongez dans un monde de découverte,
+                d'exploration et d'aventure dans <span class="yellow">The Legend of Zelda: Breath of the Wild</span>, un
+                nouveau jeu qui vient
+                bouleverser la série à succès.
+            </p>
+        </div>
+        <div class="eyes">
+            <img src="./img/zelda-link-cheval.png" alt="Link qui brandit une épée sur son cheval Epona">
+            <div class="eyes-text">
+                <h2>Ouvre les yeux</h2>
+                <div class="hl-arrow"></div>
+                <p>Après un sommeil de d'un siècle, Link se réveille seul dans un monde qu'il ne reconnaît pas. Le héros
+                    légendaire va désormais devoir explorer un territoire vaste et dangereux et retrouver la mémoire
+                    avant
+                    qu'Hyrule ne soit perdu à jamais. Link entreprend un périple pour trouver des réponses où il devra
+                    se
+                    servir
+                    de tout ce qui se trouve sur sa route pour survivre.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <div>
-        <img class="imagefond" src="./img/zelda-botw.jpg" alt="images du jeux Zelda Breath of the Wild">
-    </div>
+   
 
-    <div class="slide2">
-      <h2>Entrez dans un monde d'aventure</h2>
-    </div>
-
+    <!-- SECTION #1 - BASIC -->
+    <!-- Utiliser les bonnes classes pour les background des sections -->
+    <!-- Utiliser le code <div class="hl-arrow"></div> pour les soulignements dorés -->
+    <!-- Utiliser les class de spacing pour aérer votre page : https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
     <!-- CAROUSEL -->
     <!-- Carousel full width avec navigation par points - 4 slides
         
@@ -45,23 +72,13 @@
         - zelda-header-d.jpg
         - zelda-header-f.jpg
         - zelda-header-g.jpg
-
-    -->
-    
-    
-    
-
-      <!-- SECTION #1 - BASIC -->
-      <!-- Utiliser les bonnes classes pour les background des sections -->
-      <!-- Utiliser le code <div class="hl-arrow"></div> pour les soulignements dorés -->
-      <!-- Utiliser les class de spacing pour aérer votre page : https://getbootstrap.com/docs/5.0/utilities/spacing/ -->
-     
+       
 
 
-      <!-- SECTION #2 - BOTSTRAP COL -->
-      <!-- N'oubliez pas l'affichage responsive, chaque colonne doit être en full width sur smartphone -->
+    <!-- SECTION #2 - BOTSTRAP COL -->
+    <!-- N'oubliez pas l'affichage responsive, chaque colonne doit être en full width sur smartphone -->
     <!-- Utiliser le code <div class="hl-arrow"></div> pour les soulignements dorés -->
-     
+
 
 
     <!-- SECTION #3 - CAROUSEL -->
@@ -72,8 +89,8 @@
         - zelda-run.jpg
 
     -->
-    
-    
+
+
 
     <!-- SECTION #4 - GRID CSS -->
     <!-- Utiliser le code <div class="hl-arrow"></div> pour les soulignements dorés -->
@@ -82,18 +99,19 @@
     <!-- Le bouton 1 mène à la page Nintendo -->
     <!-- Le bouton 2 ouvre un modal stylisé (même background que les sections dark, largeur 800px) avec la bande-annonce (lien : https://www.youtube.com/watch?v=vumJiWdxQSs)
     -->
-   
+
 
 
     <!-- SECTION #5 - FLEXBOX -->
     <!-- Utiliser le code <div class="hl-arrow"></div> pour les soulignements dorés -->
     <!-- Construisez vos colonnes avec Flexbox-->
     <!-- Pour l'icône de l'oeil : https://icons.getbootstrap.com/ -->
-    
+
 
 
     <!-- FOOTER FLEX -->
     <!-- La flèche renvoie en haut de page -->
-    
+
 </body>
+
 </html>

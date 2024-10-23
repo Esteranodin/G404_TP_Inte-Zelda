@@ -1,15 +1,13 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Medula+One&display=swap');
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
-body{
-margin: 0%;
+body {
+  margin: 0%;
 }
 
 .logo {
-  width: 15%; 
+  width: 15%;
   margin-left: 20px;
 }
 
@@ -23,9 +21,10 @@ h1 {
   margin-left: 40px;
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
+  font-weight: ;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -38,16 +37,16 @@ nav ol {
 }
 
 a:hover {
-font-weight: bold;
+  font-weight: bold;
 }
 
 nav ol a {
   text-decoration: none;
-  color: black;  
+  color: black;
 }
 
 .menu {
-  list-style: none;  
+  list-style: none;
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
   font-size: 24px;
@@ -55,22 +54,55 @@ nav ol a {
   align-items: center;
 }
 
-.imagefond{
+.imagefond {
   width: 100%;
- display: flex;
-}
-
-.slide2{
-  background-image: url("../img/zelda-bg_pattern_brown.png");
   display: flex;
+  ;
 }
 
-.slide2 h2{
+.slide1 {
+  background-image: url("../img/zelda-bg_pattern_brown.png");
+  padding: 10%;
+}
+
+.slide1 h2 {
   color: aliceblue;
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
   font-size: 48px;
+  font-weight: lighter;
 }
+
+.slide1 p {
+  color: aliceblue;
+  font-family: 'Libre Baskerville', serif;
+  src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+  font-size: 15px;
+}
+
+.yellow {
+  color: #ffc107;
+}
+
+.world {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.eyes {
+  background-color: chocolate;
+  display: flex;
+
+}
+
+.eyes-text{
+  flex-direction: column;
+  align-items: center;
+}
+
+
 
 /*
 @font-face {
@@ -122,11 +154,11 @@ Jaune : #ffc107
 /* STYLES DES SECTIONS  */
 
 .dark {
-    /* Image de fond : zelda-bg_pattern_brown.png */
+  /* Image de fond : zelda-bg_pattern_brown.png */
 }
 
 .light {
-    /* Image de fond : zelda-bg_pattern_white.png */
+  /* Image de fond : zelda-bg_pattern_white.png */
 }
 
 
@@ -141,49 +173,31 @@ Jaune : #ffc107
 
 /* GRID CSS */
 
-.wrapper {
-    
-}
-  
-.bloc-a {
-    
-}
-  
-.bloc-b {
+.wrapper {}
 
-}
-  
-.bloc-d {
+.bloc-a {}
 
-}
-  
-.bloc-c {
+.bloc-b {}
 
-}
+.bloc-d {}
 
-.bloc-f {
-    
-}
+.bloc-c {}
 
-.bloc-e {
-    
-}
-  
+.bloc-f {}
+
+.bloc-e {}
+
 
 
 /* BOUTONS */
 
-.btn {
-   
-}
+.btn {}
 
 
 
 /* FLEXBOX */
-  
-.myFlex {
 
-}
+.myFlex {}
 
 
 
@@ -192,11 +206,13 @@ Jaune : #ffc107
 /* DIVIDER */
 
 
-*, :after, :before {
+*,
+:after,
+:before {
   box-sizing: border-box;
 }
 
-.hl-arrow { 
+.hl-arrow {
   position: relative;
   display: block;
   background-color: #AF966D;
@@ -208,32 +224,38 @@ Jaune : #ffc107
   -webkit-transition: width 2s 0.1s cubic-bezier(0.49, 0.02, 0.29, 1.06), opacity 0.6s 0.1s ease;
   transition: width 2s 0.1s cubic-bezier(0.49, 0.02, 0.29, 1.06), opacity 0.6s 0.1s ease;
 }
+
 .hl-arrow {
   width: 100%;
   opacity: 1;
 }
+
 @media only screen and (max-width: 767px) {
   .hl-arrow {
-      max-width: inherit;
-      width: 60%;
-      margin: 14px auto 13px;
+    max-width: inherit;
+    width: 60%;
+    margin: 14px auto 13px;
   }
 }
-.hl-arrow:before, .hl-arrow:after {
-position: absolute;
-content: "";
-background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4yLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iZGl2aWRlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIyNXB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDI1IDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1IDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNCNjlBNjg7fQ0KPC9zdHlsZT4NCjxwb2x5Z29uIGlkPSJhcnJvdyIgY2xhc3M9InN0MCIgcG9pbnRzPSIyNC41LDUuMDI3IDIxLjgyMiw3Ljc0NCAxOS4zNDMsNS4yMyAxNy4wOTUsNy43NDQgMC41LDQuMjY3IDAuNSwzLjk3NyAxNy4wOTUsMC41IA0KCTE5LjM0MywzLjAxNCAyMS44MjIsMC41IDI0LjUsMy4yMTYgIi8+DQo8L3N2Zz4NCg==") center center no-repeat;
-width: 24px;
-height: 8px;
-top: 50%;
--webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-}
-.hl-arrow:before {
-left: -24px;
-}
+
+.hl-arrow:before,
 .hl-arrow:after {
--webkit-transform: translateY(-50%) scaleX(-1);
-        transform: translateY(-50%) scaleX(-1);
-right: -24px;
+  position: absolute;
+  content: "";
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4yLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iZGl2aWRlciIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIyNXB4IiBoZWlnaHQ9IjhweCIgdmlld0JveD0iMCAwIDI1IDgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI1IDg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOiNCNjlBNjg7fQ0KPC9zdHlsZT4NCjxwb2x5Z29uIGlkPSJhcnJvdyIgY2xhc3M9InN0MCIgcG9pbnRzPSIyNC41LDUuMDI3IDIxLjgyMiw3Ljc0NCAxOS4zNDMsNS4yMyAxNy4wOTUsNy43NDQgMC41LDQuMjY3IDAuNSwzLjk3NyAxNy4wOTUsMC41IA0KCTE5LjM0MywzLjAxNCAyMS44MjIsMC41IDI0LjUsMy4yMTYgIi8+DQo8L3N2Zz4NCg==") center center no-repeat;
+  width: 24px;
+  height: 8px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.hl-arrow:before {
+  left: -24px;
+}
+
+.hl-arrow:after {
+  -webkit-transform: translateY(-50%) scaleX(-1);
+  transform: translateY(-50%) scaleX(-1);
+  right: -24px;
 }
