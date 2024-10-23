@@ -58,12 +58,11 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
 .imagefond {
   width: 100%;
   display: flex;
-  ;
 }
 
 .slide1 {
   background-image: url("../img/zelda-bg_pattern_brown.png");
-  padding: 10%;
+  padding: 5%;
 }
 
 .slide1 h2 {
@@ -81,6 +80,9 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   font-size: 15px;
 }
 
+/*
+Slide 1 finir travailler écarts entre titres et flèches
+*/
 .yellow {
   color: #ffc107;
 }
@@ -93,14 +95,16 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
 }
 
 .eyes {
-  background-color: chocolate;
   display: flex;
-
+  margin: 10%;
 }
 
-.eyes-text{
+.eyes-text {
+  display: flex;
+  margin: 5% 10% 0 10%;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 
