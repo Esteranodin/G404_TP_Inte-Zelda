@@ -55,7 +55,7 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   font-variant: small-caps;
 }
 
-.imagefond {
+.jaquette {
   width: 100%;
   display: flex;
 }
@@ -65,13 +65,14 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   padding: 5% 5% 2%;
 }
 
+/* Penser a mettre slide3 et slide5 avec virgule pour selecteurs multiples */
 .slide1 h2 {
   color: aliceblue;
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
   font-size: 48px;
   font-weight: lighter;
-  margin: 0 auto 15px;
+  margin: 0 auto 20px;
 }
 
 .slide1 p {
@@ -97,7 +98,7 @@ Slide 1 finir travailler écarts entre titres et flèches
 
 .eyes {
   display: flex;
-  margin: 10%;
+  margin: 10% auto 5%;
 }
 
 .eyes-text {
@@ -105,6 +106,7 @@ Slide 1 finir travailler écarts entre titres et flèches
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding-top: 5%;
 }
 
 #linkOnHorse {
@@ -115,11 +117,21 @@ Slide 1 finir travailler écarts entre titres et flèches
 .slide2 {
   background-image: url("../img/zelda-bg_pattern_white.png");
   padding: 5% 5% 2%;
+}
 
 #linkFrontWood {
   display: flex;
   width: 50%;
+}
 
+/* Penser a mettre slide4 avec virgule pour selecteurs multiples */
+.slide2 h2 {
+  color: black;
+  font-family: 'Medula One', cursive;
+  src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
+  font-size: 48px;
+  font-weight: lighter;
+  margin: 0 auto 20px;
 }
 
 /*
