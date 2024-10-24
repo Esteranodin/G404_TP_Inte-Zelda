@@ -62,7 +62,7 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
 
 .slide1 {
   background-image: url("../img/zelda-bg_pattern_brown.png");
-  padding: 5%;
+  padding: 5% 5% 2%;
 }
 
 .slide1 h2 {
@@ -71,6 +71,7 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
   font-size: 48px;
   font-weight: lighter;
+  margin: 0 auto 15px;
 }
 
 .slide1 p {
@@ -101,13 +102,25 @@ Slide 1 finir travailler écarts entre titres et flèches
 
 .eyes-text {
   display: flex;
-  margin: 5% 10% 0 10%;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
+#linkOnHorse {
+  width: 100%;
+  margin-right: 10%;
+}
 
+.slide2 {
+  background-image: url("../img/zelda-bg_pattern_white.png");
+  padding: 5% 5% 2%;
+
+#linkFrontWood {
+  display: flex;
+  width: 50%;
+
+}
 
 /*
 @font-face {
@@ -221,7 +234,7 @@ Jaune : #ffc107
   position: relative;
   display: block;
   background-color: #AF966D;
-  margin: 17px auto 12px;
+  margin: 0 auto 12px;
   max-width: 307px;
   height: 2px;
   opacity: 0;
