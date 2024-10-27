@@ -60,13 +60,14 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   display: flex;
 }
 
-.slide1, .slide3 {
+.slide1,
+.slide3 {
   background-image: url("../img/zelda-bg_pattern_brown.png");
   padding: 5% 15% 2%;
 }
 
-/* Penser a mettre slide3 et slide5 avec virgule pour selecteurs multiples */
-.slide1 h2, .slide3 h2 {
+.slide1 h2,
+.slide3 h2 {
   color: aliceblue;
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
@@ -75,7 +76,8 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   margin: 0 auto 20px;
 }
 
-.slide1 p, .slide3 p {
+.slide1 p,
+.slide3 p {
   color: aliceblue;
   font-family: 'Libre Baskerville', serif;
   src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
@@ -110,7 +112,8 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   margin-right: 10%;
 }
 
-.slide2 {
+.slide2,
+.slide4 {
   background-image: url("../img/zelda-bg_pattern_white.png");
   padding: 5% 15% 2%;
 }
@@ -123,7 +126,8 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
 }
 
 /* Penser a mettre slide4 avec virgule pour selecteurs multiples */
-.slide2 h2 {
+.slide2 h2,
+.slide4 h2 {
   color: black;
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
@@ -132,7 +136,8 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   margin: 0 auto 20px;
 }
 
-.slide2 p {
+.slide2 p,
+.slide4 p {
   color: black;
   font-family: 'Libre Baskerville', serif;
   src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
@@ -143,12 +148,53 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
 .vignettesx3 {
   display: flex;
   margin-top: 50px;
+
   img {
     width: 33%;
   }
 }
 
+.mosaic {
+  margin: 5% 0 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: repeat(3, 1fr);
 
+  img {
+    width: 100%;
+  }
+}
+
+#pic-one {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+#pic-two {
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
+#pic-three {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#pic-four {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#pic-five {
+  grid-column: 1 / 2;
+  grid-row: 3;
+}
+
+#pic-six {
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
 
 /*
 @font-face {
