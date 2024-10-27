@@ -60,13 +60,13 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   display: flex;
 }
 
-.slide1 {
+.slide1, .slide3 {
   background-image: url("../img/zelda-bg_pattern_brown.png");
-  padding: 5% 5% 2%;
+  padding: 5% 15% 2%;
 }
 
 /* Penser a mettre slide3 et slide5 avec virgule pour selecteurs multiples */
-.slide1 h2 {
+.slide1 h2, .slide3 h2 {
   color: aliceblue;
   font-family: 'Medula One', cursive;
   src: url('../fonts/MedulaOne-Regular.ttf') format('truetype');
@@ -75,16 +75,14 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   margin: 0 auto 20px;
 }
 
-.slide1 p {
+.slide1 p, .slide3 p {
   color: aliceblue;
   font-family: 'Libre Baskerville', serif;
   src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
   font-size: 15px;
+  text-align: center;
 }
 
-/*
-Slide 1 finir travailler écarts entre titres et flèches
-*/
 .yellow {
   color: #ffc107;
 }
@@ -93,7 +91,6 @@ Slide 1 finir travailler écarts entre titres et flèches
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
 .eyes {
@@ -105,7 +102,6 @@ Slide 1 finir travailler écarts entre titres et flèches
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   padding-top: 5%;
 }
 
@@ -116,12 +112,14 @@ Slide 1 finir travailler écarts entre titres et flèches
 
 .slide2 {
   background-image: url("../img/zelda-bg_pattern_white.png");
-  padding: 5% 5% 2%;
+  padding: 5% 15% 2%;
 }
 
 #linkFrontWood {
   display: flex;
-  width: 50%;
+  width: 100%;
+  justify-self: center;
+  margin: 3%;
 }
 
 /* Penser a mettre slide4 avec virgule pour selecteurs multiples */
@@ -133,6 +131,24 @@ Slide 1 finir travailler écarts entre titres et flèches
   font-weight: lighter;
   margin: 0 auto 20px;
 }
+
+.slide2 p {
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+  font-size: 15px;
+  text-align: center;
+}
+
+.vignettesx3 {
+  display: flex;
+  margin-top: 50px;
+  img {
+    width: 33%;
+  }
+}
+
+
 
 /*
 @font-face {
