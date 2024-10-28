@@ -125,7 +125,6 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   margin: 3%;
 }
 
-/* Penser a mettre slide4 avec virgule pour selecteurs multiples */
 .slide2 h2,
 .slide4 h2 {
   color: black;
@@ -162,7 +161,7 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   grid-auto-rows: repeat(3, 1fr);
 
   img {
-    width: 100%;
+   width: 100%;
   }
 }
 
@@ -196,6 +195,22 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   grid-row: 3;
 }
 
+.bouton{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 2%;
+
+  a{
+    text-decoration: none;
+    font-family: 'Medula One', cursive;
+    font-size: 2.5em;
+    color: #ffc107;
+    background-color: #AF966D;
+    padding: 2% 5%;
+  }
+}
 /*
 @font-face {
   
