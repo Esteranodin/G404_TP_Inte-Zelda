@@ -166,6 +166,7 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
 }
 
 #pic-one {
+  height: 100%;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
