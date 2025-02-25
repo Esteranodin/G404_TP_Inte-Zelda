@@ -107,6 +107,7 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
   padding-top: 5%;
 }
 
+
 #linkOnHorse {
   width: 100%;
   margin-right: 10%;
@@ -192,6 +193,7 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
 }
 
 #pic-six {
+  height: 100%;
   grid-column: 2 / 4;
   grid-row: 3;
 }
@@ -199,6 +201,7 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
 .bouton{
   display: flex;
   flex-direction: row;
+  margin-top: 2rem;
   gap: 1rem;
   justify-content: center;
   padding-top: 2%;
@@ -212,107 +215,27 @@ si temps pour chipotages ==> espacement entre jeux évènement et liste
     padding: 2% 5%;
   }
 }
-/*
-@font-face {
-  
+
+
+@media screen and (max-width: 1000px) {
+  .eyes {
+    flex-direction: column;
+  }
 }
 
-@font-face {
-  font-family: 'Libre Baskerville', serif;
-  src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype'); 
+@media screen and (max-width: 500px) {
+
+nav {
+  flex-wrap: wrap;
+}
+nav ol {
+  flex-direction: column;
+  gap: 10px;
 }
 
-@font-face {
-  font-family: 'Libre Baskerville', serif;
-  src: url("../fonts/LibreBaskerville-Bold.ttf") format('truetype');
-  font-weight: bold;
+.logo {
+  width: 50%;
 }
-
-*/
-
-
-/*
-
-Polices : Medula One pour les titres et boutons, Libre Baskerville pour le reste
-
-h1 64px
-
-h2 48px
-
-h3 36px 
-
-i 36px
-
-nav items 24px
-
-Couleur dorée : #af966d
-
-Jaune : #ffc107
-
-*/
-
-
-/*  INTERDICTION DE CREER DES CLASS POUR LES MARGES, UTILISEZ LES CLASS BOOTSTRAP EXISTANTES :
-    https://getbootstrap.com/docs/5.0/utilities/spacing/
-*/
-
-
-
-
-/* STYLES DES SECTIONS  */
-
-.dark {
-  /* Image de fond : zelda-bg_pattern_brown.png */
-}
-
-.light {
-  /* Image de fond : zelda-bg_pattern_white.png */
-}
-
-
-
-
-/* MODAL */
-
-/* Ajouter le pattern zelda-bg_pattern_brown.png au background du modal */
-
-
-
-
-/* GRID CSS */
-
-.wrapper {}
-
-.bloc-a {}
-
-.bloc-b {}
-
-.bloc-d {}
-
-.bloc-c {}
-
-.bloc-f {}
-
-.bloc-e {}
-
-
-
-/* BOUTONS */
-
-.btn {}
-
-
-
-/* FLEXBOX */
-
-.myFlex {}
-
-
-
-/******************/
-
-/* DIVIDER */
-
 
 *,
 :after,
@@ -366,4 +289,5 @@ Jaune : #ffc107
   -webkit-transform: translateY(-50%) scaleX(-1);
   transform: translateY(-50%) scaleX(-1);
   right: -24px;
+}
 }
